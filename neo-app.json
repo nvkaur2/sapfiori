@@ -1,0 +1,31 @@
+{
+  "routes": [
+    {
+      "path": "/resources",
+      "description": "end point to load sapui5 locally from webIDE",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      }
+    },
+    {
+      "path": "/sap/opu/odata",
+      "target": {
+        "type": "destination",
+        "name": "BW8_CLONING",
+        "entryPath": "/sap/opu/odata"
+      },
+      "description": "My S/4HANA system"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    }
+  ]
+}
